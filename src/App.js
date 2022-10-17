@@ -1,10 +1,20 @@
-import './App.css';
-import Card from "./components/maincard/Card"
+import "./App.css";
+import Main from "./components/main/main";
+// import Card from "./components/maincard/Card";
+// import Thankyou from "./components/thankyouCard/ThankyouCard";
 
 function App() {
   return (
     <div className="App">
-      <Card></Card>
+      <Main />
+      {/* <Thankyou/> */}
+      <div className="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge">
+          Frontend Mentor
+        </a>
+        Coded by <a href="#">Jeffrey Shin</a>.
+      </div>
     </div>
   );
 }
