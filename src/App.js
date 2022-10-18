@@ -1,4 +1,5 @@
 import "./App.css";
+import "./reset.css;"
 import Main from "./components/main/main";
 // import Card from "./components/maincard/Card";
 // import Thankyou from "./components/thankyouCard/ThankyouCard";

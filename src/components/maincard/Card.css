@@ -1,0 +1,27 @@
+@media screen and (max-width: 375px) { 
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      background: hsl(213, 19%, 18%);
+      border: 1px solid white
+    }
+
+    .star-img {
+      margin: 1.7em 1.7em 0;
+      padding: .8em .5em .2em;
+      border-radius: 100px;
+      width: 1.8em;    
+      height: 1.8em;  
+      border: 2px solid white
+    };
+
+    .main-card-container {
+      /* float: left;
+      text-align: left !important;
+      width: 100%; */
+      border: 2px solid green;
+    }
+    .ratings-form {
+       border: 2px solid green;
+    }
+}

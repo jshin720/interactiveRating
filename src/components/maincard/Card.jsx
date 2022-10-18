@@ -1,7 +1,8 @@
 import React from "react";
 import Star from "../../images/icon-star.svg";
 // import { useNavigate } from "react-router-dom";
-import Main from "../main/main";
+// import Main from "../main/main";
+import "./Card.css"
 
 const Card = (props) => {
   // const [rating, setRating] = useState("0");
@@ -20,21 +21,21 @@ const Card = (props) => {
   return (
     <div className="card-container">
       <span className="star-img">
-        <img src={Star} alt="Star" />
+        <img src={Star} alt="Star" className="star-icon" />
       </span>
-      <section>
-        <h1>How did we do?</h1>
+      <section className="main-card-container">
+        <h1 className="heading">How did we do?</h1>
         <p className="card-description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
       </section>
-      <form action="ratings-form">
+      <form className="ratings-form">
         <input
           type="radio"
           value="1"
           name="one"
-          id="one"
+          id="ratings"
           checked={props.rating === "1"}
           onChange={handleChange}
         />
@@ -43,7 +44,7 @@ const Card = (props) => {
           type="radio"
           value="2"
           name="two"
-          id="two"
+          id="ratings"
           checked={props.rating === "2"}
           onChange={handleChange}
         />
@@ -52,7 +53,7 @@ const Card = (props) => {
           type="radio"
           value="3"
           name="three"
-          id="three"
+          id="ratings"
           checked={props.rating === "3"}
           onChange={handleChange}
         />
@@ -61,7 +62,7 @@ const Card = (props) => {
           type="radio"
           value="4"
           name="four"
-          id="four"
+          id="ratings"
           checked={props.rating === "4"}
           onChange={handleChange}
         />
@@ -70,7 +71,7 @@ const Card = (props) => {
           type="radio"
           value="5"
           name="five"
-          id="five"
+          id="ratings"
           checked={props.rating === "5"}
           onChange={handleChange}
         />
