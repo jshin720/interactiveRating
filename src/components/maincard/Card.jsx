@@ -2,7 +2,7 @@ import React from "react";
 import Star from "../../images/icon-star.svg";
 // import { useNavigate } from "react-router-dom";
 // import Main from "../main/main";
-import "./Card.css"
+import "./Card.css";
 
 const Card = (props) => {
   // const [rating, setRating] = useState("0");
@@ -23,7 +23,7 @@ const Card = (props) => {
       <span className="star-img">
         <img src={Star} alt="Star" className="star-icon" />
       </span>
-      <section className="main-card-container">
+      <section className="main-card">
         <h1 className="heading">How did we do?</h1>
         <p className="card-description">
           Please let us know how we did with your support request. All feedback
@@ -31,58 +31,62 @@ const Card = (props) => {
         </p>
       </section>
       <form className="ratings-form">
-        <input
-          type="radio"
-          value="1"
-          name="one"
-          id="ratings"
-          checked={props.rating === "1"}
-          onChange={handleChange}
-        />
-        <label htmlFor="one">1</label>
-        <input
-          type="radio"
-          value="2"
-          name="two"
-          id="ratings"
-          checked={props.rating === "2"}
-          onChange={handleChange}
-        />
-        <label htmlFor="two">2</label>
-        <input
-          type="radio"
-          value="3"
-          name="three"
-          id="ratings"
-          checked={props.rating === "3"}
-          onChange={handleChange}
-        />
-        <label htmlFor="three">3</label>
-        <input
-          type="radio"
-          value="4"
-          name="four"
-          id="ratings"
-          checked={props.rating === "4"}
-          onChange={handleChange}
-        />
-        <label htmlFor="four">4</label>
-        <input
-          type="radio"
-          value="5"
-          name="five"
-          id="ratings"
-          checked={props.rating === "5"}
-          onChange={handleChange}
-        />
-        <label htmlFor="five">5</label>
-        <button
-          type="submit"
-          className="btn btn-primary"
-          onClick={handleSubmit}
-        >
-          Submit
-        </button>
+        <div className="ratings-button">
+          <input
+            type="radio"
+            value="1"
+            name="one"
+            id="ratings"
+            checked={props.rating === "1"}
+            onClick={handleChange}
+          />
+          <label htmlFor="one">1</label>
+          <input
+            type="radio"
+            value="2"
+            name="two"
+            id="ratings"
+            checked={props.rating === "2"}
+            onClick={handleChange}
+          />
+          <label htmlFor="two">2</label>
+          <input
+            type="radio"
+            value="3"
+            name="three"
+            id="ratings"
+            checked={props.rating === "3"}
+            onClick={handleChange}
+          />
+          <label htmlFor="three">3</label>
+          <input
+            type="radio"
+            value="4"
+            name="four"
+            id="ratings"
+            checked={props.rating === "4"}
+            onClick={handleChange}
+          />
+          <label htmlFor="four">4</label>
+          <input
+            type="radio"
+            value="5"
+            name="five"
+            id="ratings"
+            checked={props.rating === "5"}
+            onClick={handleChange}
+          />
+          <label htmlFor="five">5</label>
+        </div>
+        <div className="button-container">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );

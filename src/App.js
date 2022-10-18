@@ -1,5 +1,5 @@
 import "./App.css";
-import "./reset.css;"
+// import "./reset.css";
 import Main from "./components/main/main";
 // import Card from "./components/maincard/Card";
 // import Thankyou from "./components/thankyouCard/ThankyouCard";
@@ -14,7 +14,7 @@ function App() {
         <a href="https://www.frontendmentor.io?ref=challenge">
           Frontend Mentor
         </a>
-        Coded by <a href="#">Jeffrey Shin</a>.
+        Coded by <a href="https://jeffshin.netlify.app/#">Jeffrey Shin</a>.
       </div>
     </div>
   );
