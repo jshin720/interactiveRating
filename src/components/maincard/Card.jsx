@@ -30,9 +30,23 @@ const Card = (props) => {
           is appreciated to help us improve our offering!
         </p>
       </section>
-      <form className="ratings-form">
-        <div className="ratings-button">
-          <input
+      <div className="ratings-container">
+        <button className="ratings-button" onClick={handleChange} value="1">
+          1
+        </button>
+        <button className="ratings-button" onClick={handleChange} value="2">
+          2
+        </button>
+        <button className="ratings-button" onClick={handleChange} value="3">
+          3
+        </button>
+        <button className="ratings-button" onClick={handleChange} value="4">
+          4
+        </button>
+        <button className="ratings-button" onClick={handleChange} value="5">
+          5
+        </button>
+        {/* <input
             type="radio"
             value="1"
             name="one"
@@ -71,18 +85,17 @@ const Card = (props) => {
             checked={props.rating === "5"}
             onChange={handleChange}
           />
-          <label htmlFor="five">5</label>
-        </div>
-        <div className="button-container">
-          <button
-            type="submit"
-            className="btn btn-primary"
-            onClick={handleSubmit}
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+          <label htmlFor="five">5</label> */}
+      </div>
+      <div className="button-container">
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={handleSubmit}
+        >
+          Submit
+        </button>
+      </div>
     </div>
   );
 };
