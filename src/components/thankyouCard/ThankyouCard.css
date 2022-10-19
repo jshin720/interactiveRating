@@ -9,4 +9,34 @@
     /* border: 1px solid white; */
   }
 
+  .ty-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .selected-title {
+    width: 60%;
+    border-radius: 25px;
+    padding: 8px 12px;
+    background-color: hsl(211, 19%, 24%);
+    margin: 1.5rem auto;
+    text-align: center;
+    color: hsl(25, 75%, 46%);
+  }
+
+  .ty-description-container > h2{
+    color: white;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .ty-description-container > p {
+    color: hsl(217, 12%, 63%);
+    font-size: .92rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+
 }

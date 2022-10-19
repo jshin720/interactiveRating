@@ -31,19 +31,19 @@ const Card = (props) => {
         </p>
       </section>
       <div className="ratings-container">
-        <button className="ratings-button" onClick={handleChange} value="1">
+        <button className="ratings-buttons" onClick={handleChange} value="1">
           1
         </button>
-        <button className="ratings-button" onClick={handleChange} value="2">
+        <button className="ratings-buttons" onClick={handleChange} value="2">
           2
         </button>
-        <button className="ratings-button" onClick={handleChange} value="3">
+        <button className="ratings-buttons" onClick={handleChange} value="3">
           3
         </button>
-        <button className="ratings-button" onClick={handleChange} value="4">
+        <button className="ratings-buttons" onClick={handleChange} value="4">
           4
         </button>
-        <button className="ratings-button" onClick={handleChange} value="5">
+        <button className="ratings-buttons" onClick={handleChange} value="5">
           5
         </button>
         {/* <input

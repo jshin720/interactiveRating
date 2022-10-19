@@ -1,5 +1,6 @@
 import React from "react";
 import tyImg from "../../images/illustration-thank-you.svg";
+import "./ThankyouCard.css"
 
 const ThankYouCard = (props) => {
   const handleSubmit = () => {
