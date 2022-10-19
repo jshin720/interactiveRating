@@ -60,19 +60,20 @@
   }
 
   .ratings-button {
-    margin: 0 0.5em;
+    margin: 0 1em;
     /* padding: 1em; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* width: 100%; */
-    /* align-items: center; */
+    align-items: left;
     /* border: 2px solid red; */
   }
-  #ratings {
-    display: none;
+  input[type=radio] {
+    position: absolute;
+    opacity: 0;
   }
   .ratings-form label {
-    margin: 0.7m;
+    /* margin: 0.7em; */
     padding: 0.3em 0 0;
     width: 50px;
     display: flex;

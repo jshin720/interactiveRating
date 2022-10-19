@@ -36,45 +36,40 @@ const Card = (props) => {
             type="radio"
             value="1"
             name="one"
-            id="ratings"
             checked={props.rating === "1"}
-            onClick={handleChange}
+            onChange={handleChange}
           />
           <label htmlFor="one">1</label>
           <input
             type="radio"
             value="2"
             name="two"
-            id="ratings"
             checked={props.rating === "2"}
-            onClick={handleChange}
+            onChange={handleChange}
           />
           <label htmlFor="two">2</label>
           <input
             type="radio"
             value="3"
             name="three"
-            id="ratings"
             checked={props.rating === "3"}
-            onClick={handleChange}
+            onChange={handleChange}
           />
           <label htmlFor="three">3</label>
           <input
             type="radio"
             value="4"
             name="four"
-            id="ratings"
             checked={props.rating === "4"}
-            onClick={handleChange}
+            onChange={handleChange}
           />
           <label htmlFor="four">4</label>
           <input
             type="radio"
             value="5"
             name="five"
-            id="ratings"
             checked={props.rating === "5"}
-            onClick={handleChange}
+            onChange={handleChange}
           />
           <label htmlFor="five">5</label>
         </div>
