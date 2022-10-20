@@ -11,7 +11,7 @@ const ThankYouCard = (props) => {
   console.log("rating", rating);
   console.log("submitted", submitted);
   return (
-    <div className="card-container">
+    <div className="tycard-container">
       <h4 onClick={handleSubmit}>Back</h4>
       <span className="ty-img">
         <img src={tyImg} alt="tyImg" />
