@@ -344,7 +344,7 @@
     font-weight: 700;
   }
 
-  .btn:hover {
+  .btn-primary:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
   }
