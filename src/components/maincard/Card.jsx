@@ -31,19 +31,49 @@ const Card = (props) => {
         </p>
       </section>
       <div className="ratings-container">
-        <button className="ratings-buttons" onClick={handleChange} value="1">
+        <button
+          className={
+            props.rating !== "1" ? "ratings-buttons" : "ratings-active"
+          }
+          onClick={handleChange}
+          value="1"
+        >
           1
         </button>
-        <button className="ratings-buttons" onClick={handleChange} value="2">
+        <button
+          className={
+            props.rating !== "2" ? "ratings-buttons" : "ratings-active"
+          }
+          onClick={handleChange}
+          value="2"
+        >
           2
         </button>
-        <button className="ratings-buttons" onClick={handleChange} value="3">
+        <button
+          className={
+            props.rating !== "3" ? "ratings-buttons" : "ratings-active"
+          }
+          onClick={handleChange}
+          value="3"
+        >
           3
         </button>
-        <button className="ratings-buttons" onClick={handleChange} value="4">
+        <button
+          className={
+            props.rating !== "4" ? "ratings-buttons" : "ratings-active"
+          }
+          onClick={handleChange}
+          value="4"
+        >
           4
         </button>
-        <button className="ratings-buttons" onClick={handleChange} value="5">
+        <button
+          className={
+            props.rating !== "5" ? "ratings-buttons" : "ratings-active"
+          }
+          onClick={handleChange}
+          value="5"
+        >
           5
         </button>
         {/* <input

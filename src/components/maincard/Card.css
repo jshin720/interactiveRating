@@ -58,7 +58,7 @@
     /* border: 2px solid red; */
   }
  
-  .ratings-buttons {
+  .ratings-buttons, .ratings-active {
     border: 0;
     /* margin: 0.7em; */
     padding: 0.3em 0 0;
@@ -77,6 +77,8 @@
     color: hsl(217, 12%, 63%);
     font-weight: 700;
   }
+
+
 
   .button-container {
     margin: 0 .5em 1.5rem;
@@ -176,7 +178,7 @@
     /* border: 2px solid red; */
   }
  
-  .ratings-buttons {
+  .ratings-buttons, .ratings-active {
     border: 0;
     /* margin: 0.7em; */
     padding: 0.3em 0 0;
@@ -294,7 +296,7 @@
     /* border: 2px solid red; */
   }
  
-  .ratings-buttons {
+  .ratings-buttons, .ratings-active {
     border: 0;
     margin: 0.7em .2em;
     padding: 0.3em 0 0;
@@ -312,6 +314,15 @@
     align-items: center;
     color: hsl(217, 12%, 63%);
     font-weight: 700;
+  }
+
+    .ratings-active {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+  }
+   .ratings-buttons:hover {
+    background-color: hsl(25, 97%, 53%);
+    color:white;
   }
 
   .button-container {
